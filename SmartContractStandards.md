@@ -33,11 +33,11 @@ contract thisContract is Owned {
 
 ## Deploying Mainnet
 
-1. Deploy to Ethereum Mainnet
+1. Deploy to Ethereum Mainnet using a clean dev-only wallet.  
 2. Publish and verify code on Etherscan
 3. Transfer Owner to [DAO](https://github.com/canyaio/Resources/tree/master/SmartContracts)
 
 ## After Deploying
 
-1. Add address to []()
+1. Add address to the [contract tracker](https://github.com/canyaio/Resources/tree/master/SmartContracts)
 
