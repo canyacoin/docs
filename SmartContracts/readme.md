@@ -21,9 +21,9 @@
 
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
-|Price-Oracle|0x6B22026eb0B17D4d5e48cE99B7104e90baB1c652|-|?|Price oracle for CAN:BNT used in value calculations|
-|Price-OracleBase|0xB50DDE894b4083db9cb1F2eFC57deAA11C7cB485|-|?|Price oracle for BNT:DAI used in value calculations|
-|Bancor-Converter|0x5142127A6703F5Fc80BF11b7b57fF68998F218E4|-|0.4.21|CAN - BNT Bancor Converter|
+|[Price-Oracle](https://github.com/canyaio/canya-contracts-price-oracle/blob/master/contracts/ERC20BancorPriceOracle.sol)|0x6B22026eb0B17D4d5e48cE99B7104e90baB1c652|-|?|Price oracle for CAN:BNT used in value calculations|
+|[Price-OracleBase](https://github.com/canyaio/canya-contracts-price-oracle/blob/master/contracts/ERC20BancorPriceOracleBase.sol)|0xB50DDE894b4083db9cb1F2eFC57deAA11C7cB485|-|?|Price oracle for BNT:DAI used in value calculations|
+|[Bancor-Converter](https://github.com/canyaio/canya-contracts-price-oracle/blob/master/contracts/BancorConverter.sol)|0x5142127A6703F5Fc80BF11b7b57fF68998F218E4|-|0.4.21|CAN - BNT Bancor Converter|
 |Bancor-Converter|0x587044b74004E3D5eF2D453b7F8d198d9e4cB558|-|0.4.21|BNT - DAI Bancor Converter|
 
 **Multi-sigs**
