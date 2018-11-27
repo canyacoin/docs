@@ -9,9 +9,9 @@
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
 |CAN20|0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0|CanYaHQ-1|0.4.15|ERC20|
-|CAN223|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
-|TokenSwap|0x0|-|0.5.0|Swap from CAN20 to CAN223|
-|AssetSplit|0x0|-|0.5.0|Splits to DAO recipients|
+|[CAN223](https://github.com/canyaio/Resources/blob/master/SmartContracts/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
+|[TokenSwap](https://github.com/canyaio/Resources/blob/master/SmartContracts/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
+|[AssetSplit](https://github.com/canyaio/Resources/blob/master/SmartContracts/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
 |CanWork-Escrow|0x6890f982416a44589cb044d2b136d8dce44483df|-|0.4.24|Proxy contract -> current impl of CanWork|
 |CanWork-Admin|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4|-|???|Proxy contract -> current impl of admin app used to manage user auth|
 |CanHire|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|???|Main contract handling job posting etc|
