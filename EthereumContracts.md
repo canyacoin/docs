@@ -1,6 +1,6 @@
 # CanYa Project Ethereum Contracts
 
-> All ethereum based contract addresses and notes used in the CanYa project
+> All ethereum based contract addresses used in the CanYa project
 
 ### MainNet
 
