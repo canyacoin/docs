@@ -8,7 +8,7 @@
 
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
-|CAN20|0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0|CanYaHQ-1|0.4.15|ERC20|
+|[CAN20](https://github.com/canyaio/Resources/blob/master/SmartContracts/CAN20.sol)|0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0|CanYaHQ-1|0.4.15|ERC20|
 |[CAN223](https://github.com/canyaio/Resources/blob/master/SmartContracts/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
 |[TokenSwap](https://github.com/canyaio/Resources/blob/master/SmartContracts/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
 |[AssetSplit](https://github.com/canyaio/Resources/blob/master/SmartContracts/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
