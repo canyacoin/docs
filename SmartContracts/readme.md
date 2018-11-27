@@ -12,10 +12,10 @@
 |[CAN223](https://github.com/canyaio/Resources/blob/master/SmartContracts/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
 |[TokenSwap](https://github.com/canyaio/Resources/blob/master/SmartContracts/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
 |[AssetSplit](https://github.com/canyaio/Resources/blob/master/SmartContracts/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
-|CanWork-Escrow|0x6890f982416a44589cb044d2b136d8dce44483df|-|0.4.24|Proxy contract -> current impl of CanWork|
-|CanWork-Admin|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4|-|???|Proxy contract -> current impl of admin app used to manage user auth|
-|CanHire|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|???|Main contract handling job posting etc|
-|CanHire-Escrow|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|???|Controls flow of money between user and CanSeek|
+|[CanWork-Escrow](https://github.com/canyaio/canwork-contracts/tree/master/canwork-job)|0x6890f982416a44589cb044d2b136d8dce44483df|CanWork Admins (RBAC)|0.4.24|Proxy contract -> current impl of CanWork|
+|[CanWork-Admin](https://github.com/canyaio/canwork-contracts/tree/master/canwork-admin)|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4||Multi sig (CLI 1-2-3)|Proxy contract -> current impl of admin app used to manage user auth|
+|[CanHire](https://github.com/canyaio/canseek-contracts/blob/master/contracts/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
+|[CanHire-Escrow](https://github.com/canyaio/canseek-contracts/blob/master/contracts/Escrow.sol)|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|0.4.23|Controls flow of money between user and CanSeek|
 
 **ThirdParty SmartContracts**
 
@@ -48,9 +48,9 @@
 |TokenSwap|0x0|-|0.5.0|Swap from CAN20 to CAN223|
 |AssetSplit|0x0|-|0.5.0|Splits to DAO recipients|
 |CanWork-Escrow|0xae713a4428e61bfedacde3480b8699cef2940930|-|0.4.24|Proxy contract -> current impl of CanWork|
-|CanWork-Admin|0xe7da39f5edd865f0d52f2793dc8e4d82dfa10f10|-|???|Proxy contract -> current impl of admin app used to manage user auth|
-|CanHire|0x43461f82584da6e714d4745470a97ee745629ba2|-|???|Main contract handling job posting etc|
-|CanHire-Escrow|0x021224710e96181acf84a5eeb5114652e3e622c9|-|???|Controls flow of money between user and CanSeek|
+|CanWork-Admin|0xe7da39f5edd865f0d52f2793dc8e4d82dfa10f10|-|0.4.24|Proxy contract -> current impl of admin app used to manage user auth|
+|CanHire|0x43461f82584da6e714d4745470a97ee745629ba2|-|0.4.23|Main contract handling job posting etc|
+|CanHire-Escrow|0x021224710e96181acf84a5eeb5114652e3e622c9|-|0.4.23|Controls flow of money between user and CanSeek|
 
 **ThirdParty SmartContracts**
 
