@@ -10,7 +10,7 @@
 
 ### Owner
 
-Ensure that all contracts are owned
+Ensure that all contracts are owned:
 
 ```
 // Owned Contract
