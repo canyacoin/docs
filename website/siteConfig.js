@@ -14,8 +14,8 @@ const users = [];
 const siteConfig = {
   title: 'CanYa', // Title for your website.
   tagline: 'The decentralised serviceplace for the world',
-  url: 'https://canyaio.github.io/resources', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://canyaio.github.io', // Your website URL
+  baseUrl: '/Resources/', // Base URL for your project */
   blogUrl: 'https://medium.com/canyacoin',
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -30,7 +30,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'Resources',
-  organizationName: 'CanYa',
+  organizationName: 'canyaio',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
