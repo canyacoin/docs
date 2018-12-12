@@ -1,3 +1,9 @@
+---
+id: smart-contract-standards
+title: Smart Contract Standards
+sidebar_label: Smart Contracts
+---
+
 # Smart Contract Standards
 
 > Standards for deploying smart contracts on Ethereum for the CanYa Project

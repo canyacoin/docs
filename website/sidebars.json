@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Overview": ["overview"],
+    "Resources": ["smart-contract-info"],
+    "Standards": ["smart-contract-standards"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
