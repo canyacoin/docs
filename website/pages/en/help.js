@@ -19,8 +19,8 @@ function Help(props) {
   const langPart = `${language ? `${language}/` : ''}`;
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-  const blogUrl = this.props.config.blogUrl;
-  const telegramUrl = this.props.config.telegramUrl;
+  const blogUrl = props.config.blogUrl;
+  const telegramUrl = props.config.telegramUrl;
 
   const supportLinks = [
     {
