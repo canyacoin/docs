@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Overview": ["overview"],
+    "Resources": ["smart-contract-info", "architecture"],
+    "Contributing": ["contribution-guidelines", "governance", "release-management"],
+    "Standards": ["smart-contract-standards"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}

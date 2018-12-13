@@ -1,42 +1,17 @@
 # Resources
-Resources for the CanYa Project.
 
-## Technology
+Resources and documentation for the CanYa ecosystem using [Docusaurus](https://docusaurus.io)
 
-| Platform | Frontend/Backend | Hosted | Repo | Web3 | DNS Provider | DNS Custodian
-| --- | --- | --- | --- | --- | --- | --- |
- canya.com | redirects to canya.io |-|-|-|-|-|
- canya.io | Angular/Firebase |?| link | BancorWidget | Name.com | CanYaHQ
- canwork.io | Angular/Firebase |?| link | link | Name.com | CanYaHQ
+http://canyaio.github.io/Resources
 
-
-## Standards
-
-[Ethereum Standards](https://github.com/canyaio/Resources/blob/master/SmartContractStandards.md)
-
-[IPFS Standards]()
-
-[FrontEnd Standards]()
-
-[Backend Standards]()
-
-[PullRequest Standards]()
-
-## Ethereum Contracts
-
-Find all contract addresses used in the CanYa Project here:
-
-[Ethereum Contracts](https://github.com/canyaio/Resources/tree/master/SmartContracts)
-
-## Branding
-
-Find all branding assets here:
-
-[]()
-
-Find all HTML and CSS styles here:
-
-[CanStyle](https://canstyle.io)
+## Updates
+1. Make changes to `md` files in the `/docs` folder
+1. Changes will auto deploy via `travis-ci` to GitHub pages 
 
 
+## Running locally
 
+1. Clone the repo via `git clone git@github.com:canyaio/Resources.git`
+1. `cd` into the `/website` folder
+1. Run `yarn start`
+1. Navigate to `localhost:3000` in your browser
