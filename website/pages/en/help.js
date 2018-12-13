@@ -19,19 +19,22 @@ function Help(props) {
   const langPart = `${language ? `${language}/` : ''}`;
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
+  const blogUrl = this.props.config.blogUrl;
+  const telegramUrl = this.props.config.telegramUrl;
+
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
+        'overview.html',
       )})`,
       title: 'Browse Docs',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: `Ask questions about the documentation and project on our [telegram](${telegramUrl})`,
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project",
+      content: `Find out what's new with this project via [medium](${blogUrl})`,
       title: 'Stay up to date',
     },
   ];

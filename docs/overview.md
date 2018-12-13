@@ -1,10 +1,10 @@
 ---
 id: overview
-title: ReadMe
-sidebar_label: ReadMe
+title: Overview
+sidebar_label: Overview
 ---
 
-# Resources
+
 Resources for the CanYa Project.
 
 ## Technology
@@ -20,19 +20,19 @@ Resources for the CanYa Project.
 
 [Ethereum Standards](smart-contract-standards.md)
 
-[IPFS Standards]()
+IPFS Standards
 
-[FrontEnd Standards]()
+FrontEnd Standards
 
-[Backend Standards]()
+Backend Standards
 
-[Software Governance]()
+[Software Governance](governance.md)
 
 ## Ethereum Contracts
 
 Find all contract addresses used in the CanYa Project here:
 
-[Ethereum Contracts](https://github.com/canyaio/Resources/tree/master/SmartContracts)
+[Ethereum Contracts](smart-contract-info.md)
 
 ## Branding
 
@@ -46,3 +46,15 @@ Find all HTML and CSS styles here:
 
 
 
+## Software Governance
+
+Detailing procedure for decentralised software governance, deployments and incentives.
+
+
+### Challenges
+
+There are several challenges to resolve for managing
+
+1. [Software change control](governance.md)
+1. [Release management](release-management.md)
+1. [Trustless software artifacts](architecture.md)

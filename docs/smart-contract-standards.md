@@ -4,7 +4,6 @@ title: Smart Contract Standards
 sidebar_label: Smart Contracts
 ---
 
-# Smart Contract Standards
 
 > Standards for deploying smart contracts on Ethereum for the CanYa Project
 
@@ -12,10 +11,10 @@ sidebar_label: Smart Contracts
 
 1. Comment as per [Solidity standards](https://solidity.readthedocs.io/en/v0.5.0/layout-of-source-files.html#comments) 
 
-## Developer Environement
+## Developer Environment
 
 1. Use the latest [Solc version](https://github.com/ethereum/solidity/releases)
-1. Initialise node `package.json` and `gitlab-ci.yml` files as outlined in [SmartContracts](https://github.com/canyaio/Resources/tree/master/SmartContracts), using `.gitignore` as provided
+1. Initialise node `package.json` and [gitlab-ci.yml](assets/smart-contract/.gitlab-ci.example.yml)(or `travis`) files as outlined in [SmartContracts](smart-contract-info.md), using `.gitignore` as provided
 1. Use `VSCode` with [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension in order to provide Intellisense and force Linting
 1. Frequently run `Solidity - compile all contracts` functionality to test contract compilation
 
@@ -49,9 +48,9 @@ contract thisContract is Owned {
 
 1. Deploy to Ethereum Mainnet using a clean dev-only wallet.  
 1. Publish and verify code on Etherscan
-1. Transfer Owner to [DAO](https://github.com/canyaio/Resources/tree/master/SmartContracts)
+1. Transfer Owner to [DAO](smart-contract-info.md)
 
 ## After Deploying
 
-1. Add address to the [contract tracker](https://github.com/canyaio/Resources/tree/master/SmartContracts)
+1. Add address to the [contract tracker](smart-contract-info.md)
 

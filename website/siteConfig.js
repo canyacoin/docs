@@ -17,9 +17,8 @@ const siteConfig = {
   url: 'https://canyaio.github.io', // Your website URL
   baseUrl: '/Resources/', // Base URL for your project */
   blogUrl: 'https://medium.com/canyacoin',
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  telegramUrl: 'https://t.me/joinchat/GI97FhDD1lf6dh-r9XRdvA',
+  
   socials: [
     { name : "Facebook", url : "https://www.facebook.com/CanYaCoin/", className : "social-facebook", fontAwesome : "fab fa-facebook-square" },
     { name : "Twitter", url : "https://twitter.com/canyacoin" , className : "social-twitter", fontAwesome : "fab fa-twitter"},

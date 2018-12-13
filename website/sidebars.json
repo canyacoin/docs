@@ -1,7 +1,8 @@
 {
   "docs": {
     "Overview": ["overview"],
-    "Resources": ["smart-contract-info"],
+    "Resources": ["smart-contract-info", "architecture"],
+    "Contributing": ["contribution-guidelines", "governance", "release-management"],
     "Standards": ["smart-contract-standards"]
   },
   "docs-other": {

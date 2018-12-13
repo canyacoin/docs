@@ -4,26 +4,25 @@ title: Smart Contract Info
 sidebar_label: Smart Contract Info
 ---
 
-# CanYa Project Ethereum Contracts
 
 > All ethereum based contract addresses used in the CanYa project
 
-### MainNet
+## MainNet
 
-**CanYa SmartContracts**
+### CanYa SmartContracts
 
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
-|[CAN20](https://github.com/canyaio/Resources/blob/master/SmartContracts/CAN20.sol)|0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0|CanYaHQ-1|0.4.15|ERC20|
-|[CAN223](https://github.com/canyaio/Resources/blob/master/SmartContracts/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
-|[TokenSwap](https://github.com/canyaio/Resources/blob/master/SmartContracts/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
-|[AssetSplit](https://github.com/canyaio/Resources/blob/master/SmartContracts/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
-|[CanWork-Escrow](https://github.com/canyaio/canwork-contracts/tree/master/canwork-job)|0x6890f982416a44589cb044d2b136d8dce44483df|CanWork Admins (RBAC)|0.4.24|Proxy contract -> current impl of CanWork|
-|[CanWork-Admin](https://github.com/canyaio/canwork-contracts/tree/master/canwork-admin)|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4||Multi sig (CLI 1-2-3)|Proxy contract -> current impl of admin app used to manage user auth|
-|[CanHire](https://github.com/canyaio/canseek-contracts/blob/master/contracts/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
-|[CanHire-Escrow](https://github.com/canyaio/canseek-contracts/blob/master/contracts/Escrow.sol)|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|0.4.23|Controls flow of money between user and CanSeek|
+|[CAN20](assets/smart-contract/CAN20.sol)|0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0|CanYaHQ-1|0.4.15|ERC20|
+|[CAN223](assets/smart-contract/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
+|[TokenSwap](assets/smart-contract/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
+|[AssetSplit](assets/smart-contract/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
+|[CanWork-Escrow](assets/smart-contract/canwork-job)|0x6890f982416a44589cb044d2b136d8dce44483df|CanWork Admins (RBAC)|0.4.24|Proxy contract -> current impl of CanWork|
+|[CanWork-Admin](assets/smart-contract/canwork-admin)|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4||Multi sig (CLI 1-2-3)|Proxy contract -> current impl of admin app used to manage user auth|
+|[CanHire](assets/smart-contract/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
+|[CanHire-Escrow](assets/smart-contract/Escrow.sol)|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|0.4.23|Controls flow of money between user and CanSeek|
 
-**ThirdParty SmartContracts**
+### ThirdParty SmartContracts
 
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
@@ -32,9 +31,8 @@ sidebar_label: Smart Contract Info
 |[Bancor-Converter](https://github.com/canyaio/canya-contracts-price-oracle/blob/master/contracts/BancorConverter.sol)|0x5142127A6703F5Fc80BF11b7b57fF68998F218E4|-|0.4.21|CAN - BNT Bancor Converter|
 |Bancor-Converter|0x587044b74004E3D5eF2D453b7F8d198d9e4cB558|-|0.4.21|BNT - DAI Bancor Converter|
 
-**Multi-sigs**
+### Multi-sigs
 
-**Addresses**
 
 | Name | Address | Owner | Notes |
 | --- | --- | --- | --- |
@@ -44,7 +42,7 @@ sidebar_label: Smart Contract Info
 |Charity|0xcB6f7fD9A84452d23d44106A8aA3f8C62520Bb89|CL1-5|Charity Wallet|
 |CAN-BancorRelay|0x856D41AB6e3128bd9f49E168230CD78cE7C1E045|CL1-12|Bancor Relay Owner|
 
-### Ropsten
+## Ropsten
 
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
@@ -58,7 +56,7 @@ sidebar_label: Smart Contract Info
 |CanHire|0x43461f82584da6e714d4745470a97ee745629ba2|-|0.4.23|Main contract handling job posting etc|
 |CanHire-Escrow|0x021224710e96181acf84a5eeb5114652e3e622c9|-|0.4.23|Controls flow of money between user and CanSeek|
 
-**ThirdParty SmartContracts**
+### ThirdParty SmartContracts
 
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
