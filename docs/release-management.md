@@ -6,7 +6,9 @@ sidebar_label: Release Management
 
 
 ## Requirements
-
+1. Release stable versions based on specific milestones
+1. Automated build and deployments 
+1. Have version history public and accessible, for use with dApp nodes
 
 
 ## Resources

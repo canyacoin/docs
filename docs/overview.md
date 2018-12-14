@@ -58,3 +58,4 @@ There are several challenges to resolve for managing
 1. [Software change control](governance.md)
 1. [Release management](release-management.md)
 1. [Trustless software artifacts](architecture.md)
+
