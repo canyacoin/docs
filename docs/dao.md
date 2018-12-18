@@ -17,5 +17,5 @@ sidebar_label: DAO
 
 
 ## DApp node stakers
-- Incentivised to act honestly and retain their stake
-- Responsible for
+<!-- - Incentivised to act honestly and retain their stake
+- Responsible for -->
