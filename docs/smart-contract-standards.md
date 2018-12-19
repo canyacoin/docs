@@ -16,7 +16,7 @@ sidebar_label: Smart Contracts
 1. Use `VSCode` with [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension in order to provide Intellisense and force Linting
 1. Use the latest [Solc version](https://github.com/ethereum/solidity/releases) or set Solc to version for project
 1. Initialise truffle `truffle init` and use folder structure outlined by Truffle
-1. Initialise `package.json`, [gitlab-ci.yml](assets/smart-contract/.gitlab-ci.example.yml)(or `travis`) and `.gitignore` files as outlined in [SmartContracts](smart-contract-info.md)
+1. Where necessary, utilise [package.json](assets/smart-contract/package.example.json), [gitlab-ci.yml](assets/smart-contract/.gitlab-ci.example.yml)(or `travis`) and [.gitignore](assets/smart-contract/.gitignore.example) files as outlined in [SmartContracts](smart-contract-info.md)
 1. Frequently run `Solidity - compile all contracts` functionality to test contract compilation
 
 ### Proxies

@@ -14,13 +14,14 @@ sidebar_label: Smart Contract Info
 | Name | Address | Owner | Solidity Version | Notes |
 | --- | --- | --- | --- | --- |
 |[CAN20](assets/smart-contract/CAN20.sol)|0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0|CanYaHQ-1|0.4.15|ERC20|
-|[CAN223](assets/smart-contract/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
-|[TokenSwap](assets/smart-contract/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
-|[AssetSplit](assets/smart-contract/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
-|[CanWork-Escrow](assets/smart-contract/canwork-job)|0x6890f982416a44589cb044d2b136d8dce44483df|CanWork Admins (RBAC)|0.4.24|Proxy contract -> current impl of CanWork|
-|[CanWork-Admin](assets/smart-contract/canwork-admin)|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4||Multi sig (CLI 1-2-3)|Proxy contract -> current impl of admin app used to manage user auth|
-|[CanHire](assets/smart-contract/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
-|[CanHire-Escrow](assets/smart-contract/Escrow.sol)|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|0.4.23|Controls flow of money between user and CanSeek|
+|[CAN223](https://github.com/canyaio/canya-contracts/blob/master/contracts/CAN223.sol)|0x0|CanYaHQ-1|0.5.0|ERC223 with network fee|
+|[CAN223](https://github.com/canyaio/canya-contracts/blob/master/contracts/CAN777.sol)|0x0|CanYaHQ-1|0.5.0|ERC777 with network fee|
+|[TokenSwap](https://github.com/canyaio/canya-contracts/blob/master/contracts/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
+|[AssetSplit](https://github.com/canyaio/canya-contracts/blob/master/contracts/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
+|[CanWork-Escrow](https://github.com/canyaio/canwork-contracts/tree/master/canwork-job/contracts)|0x6890f982416a44589cb044d2b136d8dce44483df|CanWork Admins (RBAC)|0.4.24|Proxy contract -> current impl of CanWork|
+|[CanWork-Admin](https://github.com/canyaio/canwork-contracts/tree/master/canwork-admin/contracts)|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4||Multi sig (CLI 1-2-3)|Proxy contract -> current impl of admin app used to manage user auth|
+|[CanHire](https://github.com/canyaio/canseek-contracts/blob/master/contracts/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
+|[CanHire-Escrow](https://github.com/canyaio/canseek-contracts/blob/master/contracts/Escrow.sol)|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|0.4.23|Controls flow of money between user and CanSeek|
 
 ### ThirdParty SmartContracts
 
