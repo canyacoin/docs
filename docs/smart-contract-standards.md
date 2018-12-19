@@ -13,35 +13,28 @@ sidebar_label: Smart Contracts
 
 ## Developer Environment
 
-1. Use the latest [Solc version](https://github.com/ethereum/solidity/releases)
-1. Initialise node `package.json` and [gitlab-ci.yml](assets/smart-contract/.gitlab-ci.example.yml)(or `travis`) files as outlined in [SmartContracts](smart-contract-info.md), using `.gitignore` as provided
 1. Use `VSCode` with [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension in order to provide Intellisense and force Linting
+1. Use the latest [Solc version](https://github.com/ethereum/solidity/releases) or set Solc to version for project
+1. Initialise truffle `truffle init` and use folder structure outlined by Truffle
+1. Initialise `package.json`, [gitlab-ci.yml](assets/smart-contract/.gitlab-ci.example.yml)(or `travis`) and `.gitignore` files as outlined in [SmartContracts](smart-contract-info.md)
 1. Frequently run `Solidity - compile all contracts` functionality to test contract compilation
 
 ### Proxies
 
 ### Owner
 
-Ensure that all contracts are owned:
+Ensure that all contracts are owned using latest OpenZeppelin `Ownable` implementation
 
 ```
-// Owned Contract
-contract Owned {
-  modifier onlyOwner { require(msg.sender == owner); _; }
-  address public owner = msg.sender;
-  event NewOwner(address indexed old, address indexed current);
-  function setOwner(address _new) onlyOwner public { emit NewOwner(owner, _new); owner = _new; }
-}
-
 // Smart Contract
-contract thisContract is Owned {
+contract thisContract is Ownable {
 }
 ```
 
 ## Testing Environment
 
 1. Create automatically executing unit tests with `truffle` and `gitlab-ci` 
-1. Utilise libraries and comprehensively test code, utilising test libraries and validating using `solidity-coverage`
+1. Utilise libraries and comprehensively test code, validating using `solidity-coverage`
 1. Integration test with [Remix](https://remix.ethereum.org) on Ropsten
 
 ## Deploying Mainnet

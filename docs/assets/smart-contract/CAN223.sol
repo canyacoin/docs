@@ -1,66 +1,23 @@
 pragma solidity 0.4.25;
 
-// ERC20 Token with ERC223 Token compatibility
-// SafeMath from OpenZeppelin Standard
-// Added burn functions from Ethereum Token 
-// Custom functions for CAN223
-// - https://theethereum.wiki/w/index.php/ERC20_Token_Standard
-// - https://github.com/Dexaran/ERC23-tokens/blob/Recommended/ERC223_Token.sol
-// - https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/math/SafeMath.sol
-// - https://www.ethereum.org/token (uncontrolled, non-standard)
-
+import "./SafeMath.sol";
+import "./Ownable.sol";
 
 // ERC223 Receiver
 interface ContractReceiver {
   function tokenFallback( address from, uint value, bytes data ) external;
 }
 
-// SafeMath
-library SafeMath {
-
-  function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-    if (a == 0) {
-      return 0;
-    }
-    uint256 c = a * b;
-    require(c / a == b);
-    return c;
-  }
-
-  function div(uint256 a, uint256 b) internal pure returns (uint256) {
-    require(b > 0); 
-    uint256 c = a / b;
-    return c;
-  }
-
-  function sub(uint256 a, uint256 b) internal pure returns (uint256) {
-    require(b <= a);
-    uint256 c = a - b;
-    return c;
-  }
-
-  function add(uint256 a, uint256 b) internal pure returns (uint256) {
-    uint256 c = a + b;
-    require(c >= a);
-    return c;
-  }
-
-  function mod(uint256 a, uint256 b) internal pure returns (uint256) {
-    require(b != 0);
-    return a % b;
-  }
-}
-
-// Owned Contract
-contract Owned {
-  modifier onlyOwner { require(msg.sender == owner); _; }
-  address public owner = msg.sender;
-  event NewOwner(address indexed old, address indexed current);
-  function setOwner(address _new) onlyOwner public { emit NewOwner(owner, _new); owner = _new; }
-}
-
-// CanYaCoin Contract
-contract CanYaCoin is Owned {
+ /** 
+  * @title CanYaCoin
+  * @dev ERC20 Token with ERC223 Token compatibility
+  * Added burn functions from Ethereum Token 
+  * Custom functions for CAN223
+  * - https://theethereum.wiki/w/index.php/ERC20_Token_Standard
+  * - https://github.com/Dexaran/ERC23-tokens/blob/Recommended/ERC223_Token.sol
+  * - https://www.ethereum.org/token (uncontrolled, non-standard)
+  */
+contract CanYaCoin is Ownable {
 
     using SafeMath for uint256;
 
