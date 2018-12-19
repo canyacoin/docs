@@ -40,30 +40,23 @@
 </ol>
 <h2><a class="anchor" aria-hidden="true" id="developer-environment"></a><a href="#developer-environment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Developer Environment</h2>
 <ol>
-<li>Use the latest <a href="https://github.com/ethereum/solidity/releases">Solc version</a></li>
-<li>Initialise node <code>package.json</code> and <a href="/Resources/docs/assets/smart-contract/.gitlab-ci.example.yml">gitlab-ci.yml</a>(or <code>travis</code>) files as outlined in <a href="/Resources/docs/smart-contract-info">SmartContracts</a>, using <code>.gitignore</code> as provided</li>
 <li>Use <code>VSCode</code> with <a href="https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity">Solidity</a> extension in order to provide Intellisense and force Linting</li>
+<li>Use the latest <a href="https://github.com/ethereum/solidity/releases">Solc version</a> or set Solc to version for project</li>
+<li>Initialise truffle <code>truffle init</code> and use folder structure outlined by Truffle</li>
+<li>Where necessary, utilise <a href="/Resources/docs/assets/smart-contract/package.example.json">package.json</a>, <a href="/Resources/docs/assets/smart-contract/.gitlab-ci.example.yml">gitlab-ci.yml</a>(or <code>travis</code>) and <a href="/Resources/docs/assets/smart-contract/.gitignore.example">.gitignore</a> files as outlined in <a href="/Resources/docs/smart-contract-info">SmartContracts</a></li>
 <li>Frequently run <code>Solidity - compile all contracts</code> functionality to test contract compilation</li>
 </ol>
 <h3><a class="anchor" aria-hidden="true" id="proxies"></a><a href="#proxies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Proxies</h3>
 <h3><a class="anchor" aria-hidden="true" id="owner"></a><a href="#owner" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Owner</h3>
-<p>Ensure that all contracts are owned:</p>
-<pre><code class="hljs"><span class="hljs-comment">// Owned Contract</span>
-contract Owned {
-  modifier onlyOwner { require(msg.sender<span class="hljs-operator"> == </span>owner); _; }
-  address public owner = msg.sender;
-  event <span class="hljs-constructor">NewOwner(<span class="hljs-params">address</span> <span class="hljs-params">indexed</span> <span class="hljs-params">old</span>, <span class="hljs-params">address</span> <span class="hljs-params">indexed</span> <span class="hljs-params">current</span>)</span>;
-  <span class="hljs-keyword">function</span> set<span class="hljs-constructor">Owner(<span class="hljs-params">address</span> <span class="hljs-params">_new</span>)</span> onlyOwner public { emit <span class="hljs-constructor">NewOwner(<span class="hljs-params">owner</span>, <span class="hljs-params">_new</span>)</span>; owner = _new; }
-}
-
-<span class="hljs-comment">// Smart Contract</span>
-contract thisContract is Owned {
+<p>Ensure that all contracts are owned using latest OpenZeppelin <code>Ownable</code> implementation</p>
+<pre><code class="hljs"><span class="hljs-comment">// Smart Contract</span>
+contract thisContract <span class="hljs-keyword">is</span> Ownable {
 }
 </code></pre>
 <h2><a class="anchor" aria-hidden="true" id="testing-environment"></a><a href="#testing-environment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing Environment</h2>
 <ol>
 <li>Create automatically executing unit tests with <code>truffle</code> and <code>gitlab-ci</code></li>
-<li>Utilise libraries and comprehensively test code, utilising test libraries and validating using <code>solidity-coverage</code></li>
+<li>Utilise libraries and comprehensively test code, validating using <code>solidity-coverage</code></li>
 <li>Integration test with <a href="https://remix.ethereum.org">Remix</a> on Ropsten</li>
 </ol>
 <h2><a class="anchor" aria-hidden="true" id="deploying-mainnet"></a><a href="#deploying-mainnet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploying Mainnet</h2>
