@@ -18,7 +18,7 @@ sidebar_label: Smart Contract Info
 |[CAN223](https://github.com/canyaio/canya-contracts/blob/master/contracts/CAN777.sol)|0x0|CanYaHQ-1|0.5.0|ERC777 with network fee|
 |[TokenSwap](https://github.com/canyaio/canya-contracts/blob/master/contracts/TokenSwap.sol)|0x0|-|0.5.0|Swap from CAN20 to CAN223|
 |[AssetSplit](https://github.com/canyaio/canya-contracts/blob/master/contracts/AssetSplit.sol)|0x0|-|0.5.0|Splits to DAO recipients|
-|[CanSend](https://gitlab.com/canya-com/cansend/contracts/blob/master/contracts/CanSend.sol)|0x611eee5ef33c90a1cb2da72eb3f6cda5c6bf5dd2||0.4.19|Contract for CanSend|
+|[CanSend](https://gitlab.com/canya-com/cansend/contracts/blob/master/contracts/CanSend.sol)|CanYaHQ-1||0.4.19|Contract for CanSend|
 |[CanWork-Escrow](https://github.com/canyaio/canwork-contracts/tree/master/canwork-job/contracts)|0x6890f982416a44589cb044d2b136d8dce44483df|CanWork Admins (RBAC)|0.4.24|Proxy contract -> current impl of CanWork|
 |[CanWork-Admin](https://github.com/canyaio/canwork-contracts/tree/master/canwork-admin/contracts)|0x7c0d049bcc125c3276da0a2fc59e36b89bab1ff4||Multi sig (CLI 1-2-3)|Proxy contract -> current impl of admin app used to manage user auth|
 |[CanHire](https://github.com/canyaio/canseek-contracts/blob/master/contracts/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
@@ -41,6 +41,7 @@ sidebar_label: Smart Contract Info
 |Ops Wallet|0x8c7C4814d2512AF1029719803c42fe7b629d51c8|CL1-2|CanYa Ops Wallet|
 |DAO|0x685678927216DF235A4A5A952EfE88ed55e62Ff2|CL1-3|DAO Address|
 |CanYa|0xF6C969DEaAb707a4F5B2Ce2103CC00d084cc893E|CL1-4|CanYa Wallet|
+|CanYaHQ-1|0x809C007Bf1010D0272fA477eBb75CB9204F6b469||CanYaHQ-1|
 |Charity|0xcB6f7fD9A84452d23d44106A8aA3f8C62520Bb89|CL1-5|Charity Wallet|
 |CAN-BancorRelay|0x856D41AB6e3128bd9f49E168230CD78cE7C1E045|CL1-12|Bancor Relay Owner|
 
