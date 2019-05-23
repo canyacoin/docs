@@ -24,6 +24,16 @@ sidebar_label: Smart Contract Info
 |[CanHire](https://github.com/canyaio/canseek-contracts/blob/master/contracts/CanHire.sol)|0xfd6fa39c22412de6bbc3684b130fb4cab89bebae|-|0.4.23|Main contract handling job posting etc|
 |[CanHire-Escrow](https://github.com/canyaio/canseek-contracts/blob/master/contracts/Escrow.sol)|0x4c540ae83ebe431ea17493bec3805f607085a5a9|-|0.4.23|Controls flow of money between user and CanSeek|
 
+
+### Limepay
+
+| Name | Address | Owner | Solidity Version | Notes |
+| --- | --- | --- | --- | --- |
+|[Limepay Escrow V1](https://github.com/LimePay/smart-contracts/blob/master/build/Escrow_V2.json)|0xfc7edC358a32351E224594B29f28cC7ed7AFd11f|-|?|Limepay Escrow for card transactions (sent into CanWork Escrow at 1:1) Admin: 0x809c007bf1010d0272fa477ebb75cb9204f6b469|
+|Limepay Signer V1|0xf4e83eab9Ce8b138b92B72F9fE9975bB540A4E55|-|?|Authorises CAN to be sent from Escrow to Escrow|
+|[Limepay Escrow V2](https://etherscan.io/address/0x78d12fc8a093fd1164c6f408351763bb0e0cc812)|0x78d12fc8a093fd1164c6f408351763bb0e0cc812|-|?|Limepay Escrow V2. Admin: 0x809c007bf1010d0272fa477ebb75cb9204f6b469|
+
+
 ### ThirdParty SmartContracts
 
 | Name | Address | Owner | Solidity Version | Notes |
