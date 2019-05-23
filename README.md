@@ -4,6 +4,8 @@ Resources and documentation for the CanYa ecosystem using [Docusaurus](https://d
 
 http://canyaio.github.io/Resources
 
+Site deploys to: [info.canya.io](https://info.canya.io)
+
 ## Contributing
 1. Make changes to `md` files in the `/docs` folder
 1. Changes will auto deploy via `travis-ci` to GitHub pages. [Check pipeline status here](https://travis-ci.com/canyaio/Resources)
