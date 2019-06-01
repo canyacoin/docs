@@ -1,5 +1,12 @@
 # Resources
 
+**Mirror**
+
+This repo is mirrored from the Gitlab master as a backup. Please commit to this:
+
+https://gitlab.com/canyacoin/canyacore/docs
+---
+
 Resources and documentation for the CanYa ecosystem using [Docusaurus](https://docusaurus.io)
 
 http://canyaio.github.io/Resources
